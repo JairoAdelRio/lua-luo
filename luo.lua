@@ -8,12 +8,12 @@
 --See discussion here:
 --http://lua-users.org/lists/lua-l/2020-12/msg00032.html
 --http://lua-users.org/lists/lua-l/2021-05/msg00022.html
-
+local luo    = {}
 local math   = math
 local floor  = math.floor 
 local sqrt   = math.sqrt
 
-function primesieve(N)
+function luo.primesieve(N)
     local result = {2, 3}
     if N < 2 then return {} end
     if N < 3 then return {2} end
@@ -53,3 +53,5 @@ function primesieve(N)
     end
     return result
 end
+
+return luo

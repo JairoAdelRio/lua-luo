@@ -1,3 +1,14 @@
+--A naïve implementation of Xuedong Luo's prime sieve in pure Lua
+
+--Acknowledgments to Thorkil Naur for the feedback
+
+--See "A practical sieve algorithm finding prime numbers":
+--https://dl.acm.org/doi/10.1145/62065.62072
+
+--See discussion here:
+--http://lua-users.org/lists/lua-l/2020-12/msg00032.html
+--http://lua-users.org/lists/lua-l/2021-05/msg00022.html
+
 local math   = math
 local floor  = math.floor 
 local sqrt   = math.sqrt
